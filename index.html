@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Navigation Training with VR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e6e6fa;
+            display: flex;
+        }
+        nav {
+            background-color: #4B0082;
+            color: white;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            transition: background-color 0.3s, padding-left 0.3s;
+        }
+        nav a:hover {
+            background-color: #6A5ACD;
+            padding-left: 30px;
+        }
+        .container {
+            margin-left: 270px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        h2, h3 {
+            color: #4B0082;
+        }
+        .objectives-box, .sub-box {
+            background-color: #e6e6fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .links div {
+            flex: 1;
+            padding: 10px;
+            background-color: #f0f2f5;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .links a {
+            color: #4B0082;
+            text-decoration: none;
+        }
+        .team-member {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .team-member p {
+            margin: 5px 0 0 0;
+        }
+        .footer {
+            background-color: #4B0082;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .footer div {
+            margin-bottom: 10px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        .dev-box {
+            background-color: #f0f2f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .dev-box h3 {
+            color: #4B0082;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>
+        <a href="#homepage">Home</a>
+        <a href="#research-question">Research Question</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#components">Research Components</a>
+        <a href="#documents">Documents</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#team">Meet the Team</a>
+        <a href="#progress">Progress and Feedback</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+    <div class="footer">
+        <div>
+            <h4>Quick Links</h4>
+            <a href="#introduction">Introduction</a>
+            <a href="#project-scope">Research Project Scope</a>
+            <a href="#objectives">Research Objectives</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#technologies">Technologies We Used</a>
+        </div>
+        <div>
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:info@voiceassistantresearch.com">info@voiceassistantresearch.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+            <p>Address: 123 Research Lane, Innovation City, ABC 12345</p>
+        </div>
+        <div>
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+        <div>
+            <p>&copy; 2024 Voice Assistant Technology Research Project. All rights reserved.</p>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <section id="homepage" class="section">
+        <h2>Welcome to Our Research</h2>
+        <p>Welcome to our research on enhancing military navigation training through Virtual Reality (VR). Traditional methods have their limitations, which is why we've developed a comprehensive simulation platform. It focuses on four key components: intersection, resection, artillery firing, and silver compass reading. Our aim is to provide a more effective and accessible training solution for military personnel.</p>
+    </section>
+
+    <section id="research-question" class="section">
+        <h2>Research Question</h2>
+        <p>Can Virtual Reality simulations effectively enhance military navigation training by providing immersive experiences for mastering intersection, resection, artillery firing, and silver compass reading, ultimately improving soldiers' readiness and proficiency in real-world scenarios?</p>
+    </section>
+
+    <section id="objectives" class="section">
+        <h2>Objectives</h2>
+        <div class="objectives-box">
+            <h3>Evaluate VR Effectiveness</h3>
+            <p>Assess the effectiveness of VR in teaching military navigation skills.</p>
+        </div>
+        <div class="objectives-box">
+            <h3>Compare Training Methods</h3>
+            <p>Compare VR training with traditional methods to evaluate learning outcomes.</p>
+        </div>
+        <div class="objectives-box">
+            <h3>Recommend Improvements</h3>
+            <p>Suggest improvements and practical applications of VR for military navigation training.</p>
+        </div>
+    </section>
+
+    <section id="introduction" class="section">
+        <h2>Introduction</h2>
+        <p>Our research focuses on creating a Virtual Reality (VR) simulation to help soldiers master the crucial skill of determining direction and distance between two points on a map. This will fill the gap in current military training methods, which don't offer enough practical, hands-on navigation practice.</p>
+    </section>
+
+    <section id="components" class="section">
+        <h2>Research Components</h2>
+        
+        <div class="objectives-box">
+            <h3>Intersection Training</h3>
+            <p>Intersection training in military operations involves accurately locating distant objects or enemy positions. We aim to create a realistic VR simulation where soldiers can practice navigating through complex intersections and identify distant objects or potential threats.</p>
+            <div class="sub-box">
+                <p>Develop a VR simulation tailored for military navigation training, replicating complex intersection scenarios.</p>
+            </div>
+            <div class="sub-box">
+                <p>Enhance soldiers' spatial awareness and decision-making skills.</p>
+            </div>
+            <div class="sub-box">
+                <p>Evaluate the effectiveness of VR training in improving soldiers' decision-making skills and responsiveness.</p>
+            </div>
+        </div>
+        
+        <div class="objectives-box">
+            <h3>Resection Training</h3>
+            <p>Resection navigation is a vital skill in military operations, involving pinpointing one's location by identifying multiple reference points in the environment. We aim to create an immersive VR training experience that allows soldiers to practice and refine their resection navigation skills in various terrains and conditions.</p>
+            <div class="sub-box">
+                <p>Implement an immersive VR training module focused on resection navigation techniques.</p>
+            </div>
+            <div class="sub-box">
+                <p>Simulate diverse terrains and environmental conditions for realistic practice scenarios.</p>
+            </div>
+            <div class="sub-box">
+                <p>Assess the impact of VR resection training on soldiers' ability to navigate accurately and efficiently.</p>
+            </div>
+        </div>
+
+        <div class="objectives-box">
+            <h3>Artillery Firing Training</h3>
+            <p>Accurate artillery firing is a critical component of military operations, requiring precise calculations and targeting. Our research aims to develop a VR training module that replicates the complexities of artillery firing, allowing soldiers to practice their skills and improve their accuracy in a safe and controlled environment.</p>
+            <div class="sub-box">
+                <p>Create a comprehensive VR training module for artillery firing techniques.</p>
+            </div>
+            <div class="sub-box">
+                <p>Simulate realistic firing scenarios and challenging target conditions.</p>
+            </div>
+            <div class="sub-box">
+                <p>Evaluate the effectiveness of VR training in enhancing soldiers' accuracy and proficiency in artillery firing.</p>
+            </div>
+        </div>
+
+        <div class="objectives-box">
+            <h3>Silver Compass Reading Training</h3>
+            <p>Proficiency in reading a silver compass is a fundamental skill for military navigation. We aim to develop a VR training module that provides soldiers with hands-on practice in reading and using a silver compass, ensuring they can navigate accurately even in challenging conditions.</p>
+            <div class="sub-box">
+                <p>Develop an interactive VR training module for silver compass reading techniques.</p>
+            </div>
+            <div class="sub-box">
+                <p>Simulate various navigation scenarios and environmental challenges.</p>
+            </div>
+            <div class="sub-box">
+                <p>Assess the impact of VR training on soldiers' proficiency and confidence in using a silver compass for navigation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="documents" class="section">
+        <h2>Documents</h2>
+        <div class="links">
+            <div><a href="docs/proposal.pdf" target="_blank">Research Proposal</a></div>
+            <div><a href="docs/literature_review.pdf" target="_blank">Literature Review</a></div>
+            <div><a href="docs/methodology.pdf" target="_blank">Methodology</a></div>
+            <div><a href="docs/findings.pdf" target="_blank">Research Findings</a></div>
+        </div>
+    </section>
+
+    <section id="presentations" class="section">
+        <h2>Presentations</h2>
+        <div class="links">
+            <div><a href="presentations/intro.pdf" target="_blank">Introduction Presentation</a></div>
+            <div><a href="presentations/progress.pdf" target="_blank">Progress Presentation</a></div>
+            <div><a href="presentations/results.pdf" target="_blank">Results Presentation</a></div>
+        </div>
+    </section>
+
+    <section id="team" class="section">
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="team/member1.jpg" alt="Team Member 1">
+                <p><strong>Dr. Alex Johnson</strong><br>Project Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="team/member2.jpg" alt="Team Member 2">
+                <p><strong>Dr. Sarah Thompson</strong><br>VR Specialist</p>
+            </div>
+            <div class="team-member">
+                <img src="team/member3.jpg" alt="Team Member 3">
+                <p><strong>Dr. Emily Brown</strong><br>Military Consultant</p>
+            </div>
+            <div class="team-member">
+                <img src="team/member4.jpg" alt="Team Member 4">
+                <p><strong>Mr. John Smith</strong><br>Research Assistant</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="progress" class="section">
+        <h2>Progress and Feedback</h2>
+        <div class="dev-box">
+            <h3>Project Milestones</h3>
+            <p>We have successfully completed several milestones, including developing initial VR prototypes, conducting preliminary user testing, and refining the training modules based on feedback.</p>
+        </div>
+        <div class="dev-box">
+            <h3>Ongoing Development</h3>
+            <p>Our team is continuously working on enhancing the VR simulations, incorporating more realistic scenarios, and improving the overall user experience. We are also planning to expand our user testing to gather more comprehensive feedback.</p>
+        </div>
+        <div class="dev-box">
+            <h3>User Feedback</h3>
+            <p>Feedback from initial user testing has been overwhelmingly positive. Soldiers reported improved engagement and learning outcomes. We are using this feedback to further enhance the VR training modules.</p>
+        </div>
+        <div class="dev-box">
+            <h3>Future Plans</h3>
+            <p>We plan to collaborate with more military training institutions to validate the effectiveness of our VR simulations. Our goal is to make these training modules widely available to enhance military navigation training globally.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="dev-box">
+            <h3>Get in Touch</h3>
+            <p>If you have any questions or would like to learn more about our research, please feel free to reach out to us.</p>
+            <p>Email: <a href="mailto:info@voiceassistantresearch.com">info@voiceassistantresearch.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+            <p>Address: 123 Research Lane, Innovation City, ABC 12345</p>
+        </div>
+        <div class="dev-box">
+            <h3>Stay Connected</h3>
+            <p>Follow us on social media to stay updated on our latest developments and research findings.</p>
+            <p>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://www.twitter.com" target="_blank">Twitter</a> | 
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | 
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
